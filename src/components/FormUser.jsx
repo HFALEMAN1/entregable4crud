@@ -33,8 +33,10 @@ const FormUser = ({ createUser, userUpdate, updateUser, setUserUpdate, isShowFor
     useEffect(() => {
         if (userUpdate) {
             return reset(userUpdate)
+        } else {
+
+            reset(defaultValues)
         }
-        reset(userUpdate)
 
     }, [userUpdate])
 
